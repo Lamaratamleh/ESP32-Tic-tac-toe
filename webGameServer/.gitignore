@@ -1,0 +1,11 @@
+node_modules/
+
+# Wi-Fi credentials
+client_config.h
+
+# Environment secrets
+.env
+.env.*
+
+# PlatformIO build files
+.pio/

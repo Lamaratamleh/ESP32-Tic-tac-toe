@@ -1,0 +1,17 @@
+:root { font-family: system-ui, sans-serif; color: #172b43; background: #f3f6fa; }
+body { margin: 0; }
+main { max-width: 1100px; margin: 32px auto; padding: 0 20px; }
+h1 { margin-bottom: 4px; }
+p { color: #44546a; }
+small { font-size: .65em; font-weight: normal; }
+#board { display: grid; grid-template-columns: repeat(3, 88px); gap: 6px; }
+.cell { height: 88px; display: grid; place-items: center; background: white; border: 1px solid #a6b5c7; border-radius: 6px; font-size: 46px; font-weight: bold; }
+.winning { background: #c4efd5; }
+.logs { overflow: auto; max-height: 480px; background: white; border: 1px solid #ccd5e0; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; text-align: left; }
+th { position: sticky; top: 0; background: #e5edf6; }
+td, th { padding: 8px; border-bottom: 1px solid #e0e6ee; vertical-align: top; }
+td:last-child { font-family: monospace; overflow-wrap: anywhere; min-width: 250px; }
+
+select, button { font: inherit; padding: 8px 12px; border: 1px solid #a6b5c7; border-radius: 6px; margin: 4px; }
+button:not(:disabled) { cursor: pointer; background: #172b43; color: white; }

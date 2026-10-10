@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ESP32 Tic-tac-toe Monitor</title>
+  <link rel="stylesheet" href="/style.css">
+  <script defer src="/monitor.js"></script>
+</head>
+<body>
+  <main>
+    <h1>ESP32 Tic-tac-toe</h1>
+    <p>Classroom monitor Â· Human X / Computer O</p>
+    <p id="connection" role="status">Connecting to serverâ€¦</p>
+    <h2 id="status" aria-live="polite">Waiting for state</h2>
+    <form id="difficulty-form">
+      <label for="difficulty">Difficulty</label>
+      <select id="difficulty" disabled>
+        <option value="easy">Easy — random moves</option>
+        <option value="medium">Medium — wins and blocks</option>
+        <option value="hard">Hard — perfect play</option>
+      </select>
+      <button id="new-game" type="submit" disabled>Start new game</button>
+      <p>Starts a fresh board at the selected level. Play your moves on the ESP.</p>
+    </form>
+    <div id="board" aria-label="Tic-tac-toe board"></div>
+    <p id="details"></p>
+    <h2>Protocol messages <small>(latest 100)</small></h2>
+    <p>Times are local receipt times. Direction is relative to the server.</p>
+    <div class="logs"><table>
+      <thead><tr><th>Time</th><th>Direction</th><th>Role</th><th>Message</th></tr></thead>
+      <tbody id="messages"></tbody>
+    </table></div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "esp32-tic-tac-toe-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local classroom ESP32 tic-tac-toe server and monitor",
+  "scripts": { "start": "node server.js", "test": "node --test" },
+  "engines": { "node": ">=20" },
+  "dependencies": { "ws": "^8.18.0" }
+}

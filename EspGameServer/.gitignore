@@ -1,0 +1,5 @@
+.pio/
+.vscode/
+managed_components/
+src/client_config.h
+sdkconfig.LVGL-320-480.old
